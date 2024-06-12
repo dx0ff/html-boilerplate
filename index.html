@@ -27,8 +27,46 @@
             He bought some H<sub>2</sub>O when he was <i>a little bit</i> <b>thirsty</b><br/>
             The <del>market</del> <ins>save</ins> the day
         </p>
-        <p>
-            Buy some <mark>milk</mark>
-        </p>
+
+        <h2>Shopping at the mall</h2>
+        <div>
+            <!-- Selecting documents by classNames == Collection. Will look into that soon -->
+            <ul>
+                <li>Vegetables</li>
+                <li id="demo">Fruits</li>
+                <li id="demo1">Toys</li>
+                <li class="selected">Shoes</li>
+                <li>Microwave</li>
+                <li>Car</li>
+                <li>Snacks</li>
+                <li class="selected">Blender</li>
+                <li id="demo2">TV</li>
+
+            </ul>
+        </div>
+
+        <script>
+            function whenFunction(){
+                document.getElementById("demo").style.fontSize = "30px"
+                document.getElementById("demo1").style.fontSize = "30px"
+                document.getElementById("demo2").style.fontSize = "30px"
+                document.getElementById("demo").style.fontSize = "30px"
+                document.getElementById("when").innerHTML = Date()
+
+                //  Selecting documents by classNames == Collection. Will look into that soon 
+
+                // document.getElementsByClassName("selected").style.fontSize = "30px";
+                // document.getElementsByClassName("selected").style.backgroundColor = "yellow";
+
+            }
+        </script>
+
+        <strong id="when">when?</strong><br><br>
+        <button onclick="whenFunction()">Find Out Now!</button>
+        <!-- <button onclick="getElementById('when').innerHTML = Date()">when did you buy the milk</button> -->
+
+
     </body>
+
+
 </html>
