@@ -3,6 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <title>My First Webpage</title>
+
+        <style>
+            ul{
+                list-style-type: square;
+            }
+            .navigation ul {
+                font: bold 30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                text-transform: uppercase;
+            }
+            .navigation li {
+                display: inline-block;
+            }
+            .navigation a {
+                background: #395870; /* Sets the background color of the link */
+                background: linear-gradient(#49708f, #293f50); /* Sets a linear gradient */
+                border-right: 1px solid rgba(0, 0, 0, .3);
+                color: #fff;
+                padding: 12px 20px;
+                text-decoration: none; /* Gets rid of the underline thang on link */
+            }
+            .navigation a:hoover {
+                background: #314b60;
+                box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .3); /* Dont understand what this was, Will figure it out */
+                
+            }
+        </style>
     </head>
 
     <body>
@@ -27,8 +55,61 @@
             He bought some H<sub>2</sub>O when he was <i>a little bit</i> <b>thirsty</b><br/>
             The <del>market</del> <ins>save</ins> the day
         </p>
-        <p>
-            Buy some <mark>milk</mark>
-        </p>
+        <div>
+            These are some of the musicians i have seen performed
+            <ol>
+                <li>
+                    Jay Z: performed these songs: 
+                    <ul>
+                        <li>Big Pimpin'</li>
+                        <li>New Day</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Quavo: performed these songs:
+                    <ul>
+                        <li>She for keeps</li>
+                        <li>Working Me</li>
+                        <li>Lamb talk</li>
+                    </ul>
+                </li>
+                <li>
+                    Youngboy Never Broke Again: performed these songs:
+                    <ul>
+                        <li>Self Control</li>
+                        <li>No Smoke</li>
+                        <li>You bad</li>
+                        <li>No mentions</li>
+                    </ul>
+                </li>
+                <li>
+                    Alkaline: performed these songs: 
+                    <ul>
+                        <li>Company</li>
+                        <li>Cree</li>
+                        <li>Static</li>
+                        <li>State Of Emergency</li>
+                    </ul>
+                </li>
+                <li>
+                    Masicka: performed these songs: 
+                    <ul>
+                        <li>Godfather</li>
+                        <li>History</li>
+                        <li>King</li>
+                        <li>They Dont Know</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
     </body>
 </html>
